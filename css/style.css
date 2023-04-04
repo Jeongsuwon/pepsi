@@ -55,6 +55,19 @@ img{  /* 인라인 요소 : 모든 정렬의 기준점은 화면의 왼쪽, 상�
     font-size: 0; /* 글자-크기 : 0(없음, 표시x, 글자마다 자동으로 생성되는 여백x) */
     display: flex; /* 표시(기본값: 가로로 나열) */
 }
+.clip a{
+    font-size: 16px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(136, 135, 198);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 70px;
+    margin: 0 auto;
+    display: block;
+}
+
 
 .clip:nth-child(1){ /* 2개의 자식 클래스 중 첫번째 것을 사용 */
     margin-right: 50px;
@@ -130,6 +143,19 @@ hr{
     .clips{
         max-width: 300px; /* 300px 미만 폭에서는 100% 크기*/
         flex-direction: column; /* flex 방향 */
+    }
+    .clip{
+        min-height: 300px;
+    }
+    .clip a{
+        text-align: center;
+        width: 70px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    clip a:hover{
+        background-color: #005891;
     }
     .menu a {
         padding: 0 10px;
